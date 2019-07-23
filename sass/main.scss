@@ -1,0 +1,12 @@
+@import 'vendors/mixin';    //миксин 
+
+@import 'base/color';       //цвета
+@import 'base/normalize';   //нормалайз
+@import 'base/typography';  //шрифты
+
+@import 'layout/footer';    //футер
+@import 'layout/header';    //хеадер
+
+@import 'pages/home'; //главная страниа
+@import 'pages/product';       //страница блог
+@import 'pages/catalog';   //страница отзывов

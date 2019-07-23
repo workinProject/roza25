@@ -1,0 +1,223 @@
+.myCards {
+    position: relative;
+    background: #fff;
+    height: 350px;
+
+    &__btn {
+        display: none !important;
+    }
+}
+
+.myContainer {
+    position: absolute;
+    width: 92%;
+    height: inherit;
+    transition: all 0.3s linear;
+}
+
+
+.cardContainer {
+    margin: 0 auto;
+    margin-bottom: 100px !important;
+}
+
+/* При наведении*/
+.myCards:hover .myContainer {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    background-color: #fff;
+    height: auto;
+}
+
+.myCards:hover .myCards__btn {
+    display: flex !important;
+}
+
+.myCards:hover .myContainer {
+    margin-top: 40px;
+}
+
+.myCards:hover .size {
+    display: none;
+}
+
+.myCards:hover .feature {
+    margin-top: 40px;
+    transition: all 0.3s linear;
+}
+
+/*---------------*/
+
+%btn {
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 2px solid $red;
+    transition: all 0.5s linear;
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+}
+
+/*Кнопка заказать*/
+.myBtn {
+    width: 250px;
+    @extend %btn;
+
+    &:hover {
+        color: #fff;
+        background-color: $red;
+    }
+}
+
+
+/*----------------*/
+
+.feature {
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 33px;
+    width: 250px;
+    text-transform: uppercase;
+    z-index: 100000;
+    //margin-left: -1px;
+    transition: all 0.3s linear;
+
+    &__txt {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.slider__item {
+    height: 30vw !important;
+    min-height: 250px !important;
+}
+
+.size {
+    position: absolute;
+    top: 27px;
+    color: grey;
+    right: 17%;
+    font-size: 12px;
+    text-transform: uppercase;
+    @include dflex(unset, unset);
+    font-size: 16px;
+
+    &__left {
+        background: url(../img/w.png) no-repeat;
+        background-position: 0px 20px;
+
+        &--txt {
+            width: 30px;
+            height: 30px;
+            text-align: center !important;
+        }
+    }
+
+    &__right {
+        background: url(../img/h.png) no-repeat;
+
+        &--txt {
+            padding-left: 6px;
+        }
+    }
+}
+
+img.imgW {
+    width: 250px !important;
+}
+
+.myLink {
+    color: $red !important;
+}
+
+
+.main-slider-container {
+    position: relative;
+}
+
+.next {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+}
+
+.prev {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+}
+
+.padingNone {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.slick-dots {
+    @include dflex(center, unset);
+
+    margin: 0;
+    padding: 10px 0;
+
+    list-style-type: none;
+
+    li {
+        margin: 0;
+    }
+
+    button {
+        display: block;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+
+        border: none;
+        border-radius: 100%;
+        background-color: $pink !important;
+
+        text-indent: -9999px;
+    }
+
+    li.slick-active button {
+        background-color: $red !important;
+    }
+}
+
+/*Картинки для  главного слайдера*/
+.first-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
+}
+
+.second-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
+}
+
+.third-sl {
+    background: url(../img/image.png)no-repeat center;
+    background-size: cover;
+}
+
+.advantages-card{
+    padding: 25px 28px 25px 28px;
+    width: 30%;
+    border: 1px solid $red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .myContainer {
+        width: 100%;
+    }
+}

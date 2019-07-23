@@ -1,0 +1,11 @@
+@mixin dflex( $justcont, $alignitems ) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: $justcont;
+        -ms-flex-pack: $justcont;
+            justify-content: $justcont;
+    -webkit-box-align: $alignitems;
+        -ms-flex-align: $alignitems;
+            align-items: $alignitems;
+}

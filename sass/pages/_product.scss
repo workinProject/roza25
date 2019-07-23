@@ -1,0 +1,286 @@
+.slider-for__itemN {
+    height: 570px !important;
+    width: 570px;
+}
+
+.slider-for__itemN img {
+    width: 100% !important;
+    height: 570px !important;
+}
+
+.slider-nav__itemN {
+    width: 170px !important;
+    height: 170px !important;
+}
+
+.slider-nav__itemN:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+/* Красная обводка */
+.slider-nav__itemN:focus {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:active {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:active {
+    border: 2px solid $red !important;
+}
+
+.slider-nav__itemN:focus {
+    border: 2px solid $red !important;
+}
+
+/*--------------------*/
+
+
+/*.big-first {
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
+.big-second {
+    background: url(https://s1.1zoom.me/big0/772/360540-svetik.jpg) no-repeat 100%;
+    background-size: cover;
+}
+.big-third {
+    background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
+    background-size: cover;
+}
+*/
+.littel-first {
+    background: url(https://img-fotki.yandex.ru/get/3913/137106206.55e/0_1259ae_e96adcab_orig.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.littel-second {
+    background: url(https://images.wallpaperscraft.com/image/stones_wet_form_shine_53282_1920x1080.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.littel-third {
+    background: url(https://img3.goodfon.ru/original/800x480/a/6a/koshka-zabor-fon-3676.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.myBtn-product{
+    @extend %btn;
+    width: 100%;
+}
+
+.flowers-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #343434;
+    word-break: break-all;
+}
+
+.flowers-price {
+    font-size: 1.5rem;
+    line-height: 33px;
+}
+
+/* Кол-во товара */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.quantity {
+    @include dflex(unset, unset);
+    font-size: 20px;
+    align-items: center;
+}
+
+.quantity-arrow-minus,
+.quantity-arrow-plus {
+    cursor: pointer;
+}
+
+.quantity-num {
+    outline: none;
+    width: 71px !important;
+    height: 28px;
+    text-align: center;
+}
+
+/*-----------------------*/
+
+.product-description {
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        background-color: $lightGreen;
+        font-size: 20px;
+        letter-spacing: 0.27em;
+        color: $white;
+        text-transform: uppercase;
+        padding: 6px 0 6px 0;
+    }
+
+    &__name {
+        font-size: 30px;
+        line-height: 49px;
+        letter-spacing: 0.075em;
+        color: $grey;
+        word-break: break-all;
+    }
+
+    &__box {
+        @include dflex(space-between, unset);
+
+        &--price {
+            font-size: 30px;
+            line-height: 49px;
+            letter-spacing: 0.075em;
+            color: $red;
+        }
+    }
+}
+
+.composition-title {
+    color: $red;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.reviews__item {
+    padding: 25px 28px 25px 28px;
+    width: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+    &--name {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.075em;
+        color: $black;
+    }
+
+    &--date {
+        font-size: 10px;
+        line-height: 16px;
+        color: $grey;
+    }
+
+    &--txt {
+        font-size: 18px;
+        line-height: 25px;
+        color: $grey
+    }
+}
+
+
+.reviews-title {
+    color: $grey !important;
+}
+
+.slick-track .slick-track {
+    display: none;
+}
+
+
+.nextProd {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    display: none;
+}
+
+.prevProd {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    display: none;
+}
+
+
+/*Медиа*/
+@media screen and (max-width: 769px) {
+    .reviews__item {
+        width: 45%;
+    }
+
+    .reviews__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .slider-navN {
+        margin-top: 30px;
+    }
+
+    .slider-forN {
+        order: -1;
+    }
+
+    .slider-nav__itemN:nth-child(2n) {
+        margin: 0px 22px;
+    }
+
+    .slider-nav__itemN:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .product-description {
+        margin-top: 30px;
+    }
+
+    .slider-navN {
+        height: 170px !important;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .reviews__item {
+        width: 100%;
+    }
+
+    .reviews__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .slider-navN {
+        display: none !important;
+    }
+
+    .slider-for__itemN {
+        height: auto !important;
+    }
+
+    .slider-for__itemN img {
+        height: 30vw !important;
+        min-height: 280px !important;
+    }
+
+    .product-description {
+
+        &__buy .myBtn {
+            width: 100% !important;
+        }
+    }
+
+    .nextProd {
+        display: block;
+    }
+
+    .prevProd {
+        display: block;
+    }
+}

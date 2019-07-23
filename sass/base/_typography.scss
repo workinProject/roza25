@@ -1,0 +1,86 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $white;
+}
+
+.weightDefault {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 25px;
+}
+
+.top-txt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 19px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.special-txt {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.big-txt {
+    font-size: 1.875rem;
+}
+
+.title-default {
+    font-size: 2.25rem;
+    line-height: 49px;
+    letter-spacing: 0.1em;
+    color: $red;
+}
+
+.phone-container {
+
+    &__number {
+        font-weight: bold;
+        line-height: 25px;
+        color: $white;
+        font-size: 1.125rem;
+
+    }
+}
+
+.adress-container{
+    color: $white;
+    line-height: 19px;
+
+    &__title{
+        font-size: 0.875rem
+    }
+    &__txt{
+        font-size: 1.125rem;
+    }
+}
+.advantages-card__txt{
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        font-size: 12px;
+    }
+}
